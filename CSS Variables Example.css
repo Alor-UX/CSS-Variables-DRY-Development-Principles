@@ -1,0 +1,50 @@
+:root {
+   /* Headings and text */
+   --h1: clamp(3.1104rem, calc(2.8723658052vw + 2.0763483101rem), 6rem);
+   --h2: clamp(2.592rem, calc(2.1948310139vw + 1.801860835rem), 4.8rem);
+   --h3: clamp(2.16rem, calc(0.7679920477vw + 1.8835228628rem), 2.9326rem);
+   --h4: clamp(1.8rem, calc(0.3976143141vw + 1.6568588469rem), 2.2rem);
+   --h5: clamp(1.4rem, calc(0.2489190886vw + 1.3103891281rem), 1.6504126032rem);
+   --h6: clamp(1.3rem, calc(-0.0615119462vw + 1.3221443006rem), 1.2381189821rem);
+   --text-xs: clamp(1.4rem, calc(0.0994035785vw + 1.3642147117rem), 1.5rem);
+   --text-s: clamp(1.4rem, calc(0.1988071571vw + 1.3284294235rem), 1.6rem);
+   --text-m: clamp(1.6rem, calc(0.3976143141vw + 1.4568588469rem), 2rem);
+   --text-l: clamp(1.92rem, calc(0.7415506958vw + 1.6530417495rem), 2.666rem);
+   --text-xl: clamp(2.304rem, calc(1.2423240557vw + 1.85676334rem), 3.553778rem);
+   --text-xxl: clamp(2.7648rem, calc(1.96062234vw + 2.0589759576rem), 4.737186074rem);
+}
+/* 62.5% of 16px = 10px */
+html {
+   font-size: 62.5%;
+}
+h1 {
+   font-size: var(--h1);
+}
+h2 {
+   font-size: var(--h2);
+}
+h3 {
+   font-size: var(--h3);
+}
+h4 {
+   font-size: var(--h4);
+}
+h5 {
+   font-size: var(--h5);
+}
+h6 {
+   font-size: var(--h6);
+}
+p {
+   font-size: var(--text-m);
+}
+.container-wrapper {
+   display: grid;
+   grid-template-columns: repeat(7, 1fr);
+   gap: 1rem; /* optional spacing */
+}
+.container-wrapper > * {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
